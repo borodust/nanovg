@@ -15,10 +15,12 @@ solution "nanovg"
 		defines { "_CRT_SECURE_NO_WARNINGS" } --,"FONS_USE_FREETYPE" } Uncomment to compile with FreeType support
 
 		configuration "Debug"
+                        buildoptions { "-fPIC" }
 			defines { "DEBUG" }
 			flags { "Symbols", "ExtraWarnings"}
 
 		configuration "Release"
+                        buildoptions { "-fPIC" }
 			defines { "NDEBUG" }
 			flags { "Optimize", "ExtraWarnings"}
 
